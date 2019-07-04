@@ -1,0 +1,37 @@
+{
+  "event": {
+    "timestamp": 1552805773,
+    "metric": "sumSeries(*.metric.process.succeeded.count)",
+    "value": 8,
+    "state": "OK",
+    "trigger_id": "42e978e6-ab0b-44c0-b89f-acb3191ca9a5",
+    "sub_id": "269817c9-ce89-4566-8a94-ffd9f5db79cf",
+    "old_state": "ERROR",
+    "msg": "This is test event"
+  },
+  "trigger": {
+    "id": "42e978e6-ab0b-44c0-b89f-acb3191ca9a5",
+    "name": "No test metrics",
+    "desc": "Test description",
+    "targets": [
+      "sumSeries(*.metric.process.succeeded.count)"
+    ],
+    "warn_value": 0,
+    "error_value": 0,
+    "is_remote": false,
+    "__notifier_trigger_tags": ["test"]
+  },
+  "contact": {
+    "type": "telegram",
+    "value": "@komarovd95",
+    "id": "dc322a8d-5005-4a21-bf87-2101816c861f",
+    "user": "komarovdmitry"
+  },
+  "plotting": {
+    "enabled": true,
+    "theme": "dark"
+  },
+  "throttled": false,
+  "send_fail": 0,
+  "timestamp": 1552805773
+}

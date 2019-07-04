@@ -1,0 +1,9 @@
+{
+  "timestamp": 1552805773,
+  "metric": "Test metric",
+  "state": "ERROR",
+  "value": 1,
+  "trigger_id": "42e978e6-ab0b-44c0-b89f-acb3191ca9a5",
+  "old_state": "OK",
+  "msg": "This is test event"
+}

@@ -1,0 +1,4 @@
+{
+  "trigger_type": "falling",
+  "warn_value": 20.0
+}

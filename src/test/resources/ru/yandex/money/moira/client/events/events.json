@@ -1,0 +1,31 @@
+{
+  "page": 0,
+  "size": 1000,
+  "total":3,
+  "list": [
+    {
+      "trigger_event": true,
+      "timestamp": 1544800207,
+      "metric": "test1",
+      "state": "OK",
+      "trigger_id": "9e159f99-029f-4faf-8d88-154cf459443c",
+      "old_state": "ERROR",
+      "msg": ""
+    },
+    {
+      "timestamp": 1544800186,
+      "metric": "test2",
+      "value":26,
+      "state":"OK",
+      "trigger_id":"9e159f99-029f-4faf-8d88-154cf459443c",
+      "old_state":"ERROR"
+    },
+    {
+      "timestamp": 1544796007,
+      "metric": "test3",
+      "state": "ERROR",
+      "trigger_id": "9e159f99-029f-4faf-8d88-154cf459443c",
+      "old_state":"NODATA"
+    }
+  ]
+}
