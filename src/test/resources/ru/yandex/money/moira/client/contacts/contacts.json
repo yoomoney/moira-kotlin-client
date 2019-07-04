@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "type": "telegram",
+      "value": "@komarovd95",
+      "id": "dc322a8d-5005-4a21-bf87-2101816c861f",
+      "user": ""
+    },
+    {
+      "type": "mail",
+      "value": "komarovdmitry@yamoney.ru",
+      "id": "6e86ae27-2b81-4c6b-a2bb-a05ef5e3f29a",
+      "user": "komarovdmitry"
+    }
+  ]
+}

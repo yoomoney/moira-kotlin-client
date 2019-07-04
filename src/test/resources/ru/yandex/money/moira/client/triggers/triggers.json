@@ -1,0 +1,122 @@
+{
+  "list": [
+    {
+      "id": "aeeed0e2-4b89-4e4b-9957-8edbbbaba892",
+      "name": "Test trigger 1",
+      "desc": "This trigger is used for tests only",
+      "targets": [
+        "alias(sumSeries(*.*.nginx.requests.count), 'Nginx Requests')"
+      ],
+      "warn_value": null,
+      "error_value": null,
+      "trigger_type": "expression",
+      "tags": [
+        "test", "nginx"
+      ],
+      "ttl_state": "ERROR",
+      "ttl": 300,
+      "sched": {
+        "days": [
+          {
+            "enabled": true,
+            "name": "Mon"
+          },
+          {
+            "enabled": true,
+            "name": "Tue"
+          },
+          {
+            "enabled": true,
+            "name": "Wed"
+          },
+          {
+            "enabled": true,
+            "name": "Thu"
+          },
+          {
+            "enabled": true,
+            "name": "Fri"
+          },
+          {
+            "enabled": true,
+            "name": "Sat"
+          },
+          {
+            "enabled": true,
+            "name": "Sun"
+          }
+        ],
+        "tzOffset": -180,
+        "startOffset": 360,
+        "endOffset": 1439
+      },
+      "expression": "OK",
+      "patterns": [
+        "*.*.nginx.requests.count"
+      ],
+      "is_remote": false,
+      "mute_new_metrics": true,
+      "throttling": 0,
+      "highlights": null
+    },
+    {
+      "id": "654e3612-fa26-4626-a890-4027ba76d09b",
+      "name": "Test trigger 2",
+      "desc": "",
+      "targets": [
+        "*.*.nginx.requests.p95"
+      ],
+      "warn_value": 50,
+      "error_value": 10,
+      "trigger_type": "falling",
+      "tags": [
+        "test"
+      ],
+      "ttl_state": "NODATA",
+      "ttl": 600,
+      "sched": {
+        "days": [
+          {
+            "enabled": true,
+            "name": "Mon"
+          },
+          {
+            "enabled": true,
+            "name": "Tue"
+          },
+          {
+            "enabled": true,
+            "name": "Wed"
+          },
+          {
+            "enabled": true,
+            "name": "Thu"
+          },
+          {
+            "enabled": true,
+            "name": "Fri"
+          },
+          {
+            "enabled": true,
+            "name": "Sat"
+          },
+          {
+            "enabled": true,
+            "name": "Sun"
+          }
+        ],
+        "tzOffset": -180,
+        "startOffset": 540,
+        "endOffset": 1439
+      },
+      "expression": "",
+      "patterns": [
+        "*.*.nginx.requests"
+      ],
+      "is_remote":false,
+      "mute_new_metrics":false,
+      "throttling": 0,
+      "highlights":null
+    }
+  ]
+}

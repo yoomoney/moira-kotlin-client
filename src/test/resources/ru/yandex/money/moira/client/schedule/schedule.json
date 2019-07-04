@@ -1,0 +1,35 @@
+{
+  "days": [
+    {
+      "enabled": true,
+      "name": "Mon"
+    },
+    {
+      "enabled": true,
+      "name": "Tue"
+    },
+    {
+      "enabled": true,
+      "name": "Wed"
+    },
+    {
+      "enabled": true,
+      "name": "Thu"
+    },
+    {
+      "enabled": true,
+      "name": "Fri"
+    },
+    {
+      "enabled": false,
+      "name": "Sat"
+    },
+    {
+      "enabled": false,
+      "name": "Sun"
+    }
+  ],
+  "tzOffset": -300,
+  "startOffset": 600,
+  "endOffset": 1200
+}

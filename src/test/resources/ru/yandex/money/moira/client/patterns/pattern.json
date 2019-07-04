@@ -1,0 +1,67 @@
+{
+  "metrics": [
+    "test1.metric.process.succeeded.count",
+    "test2.metric.process.succeeded.count"
+  ],
+  "pattern": "*.metric.process.succeeded.count",
+  "triggers": [
+    {
+      "id": "10cd6a8d-0b49-4c34-a8fa-b01548b28fcf",
+      "name": "No test metrics",
+      "desc": "Test description",
+      "targets": [
+        "sumSeries(*.metric.process.succeeded.count)"
+      ],
+      "warn_value": null,
+      "error_value": null,
+      "trigger_type": "expression",
+      "tags": [
+        "test"
+      ],
+      "ttl_state": "ERROR",
+      "ttl": 120,
+      "sched": {
+        "days": [
+          {
+            "enabled": true,
+            "name": "Mon"
+          },
+          {
+            "enabled": true,
+            "name": "Tue"
+          },
+          {
+            "enabled": true,
+            "name": "Wed"
+          },
+          {
+            "enabled": true,
+            "name": "Thu"
+          },
+          {
+            "enabled": true,
+            "name": "Fri"
+          },
+          {
+            "enabled": true,
+            "name": "Sat"
+          },
+          {
+            "enabled": true,
+            "name": "Sun"
+          }
+        ],
+        "tzOffset": -300,
+        "startOffset": 0,
+        "endOffset": 1439
+      },
+      "expression": "OK",
+      "patterns": [
+        "*.metric.process.succeeded.count"
+      ],
+      "is_remote": false,
+      "mute_new_metrics": false,
+      "throttling": 0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "trigger_type": "rising",
+  "warn_value": 10.0
+}
