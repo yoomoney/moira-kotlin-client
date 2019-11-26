@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/yandex-money-tech/moira-kotlin-client.svg?branch=master)](https://travis-ci.org/yandex-money-tech/moira-kotlin-client)
+[![Build status](https://ci.appveyor.com/api/projects/status/vwf2hvs36150upwx?svg=true)](https://ci.appveyor.com/project/f0y/moira-kotlin-client)
+[![codecov](https://codecov.io/gh/yandex-money-tech/moira-kotlin-client/branch/master/graph/badge.svg)](https://codecov.io/gh/yandex-money-tech/moira-kotlin-client)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Javadoc](https://img.shields.io/badge/javadoc-latest-blue.svg)](https://yandex-money-tech.github.io/moira-kotlin-client/)
+[![Download](https://api.bintray.com/packages/yandex-money-tech/maven/moira-kotlin-client/images/download.svg) ](https://bintray.com/yandex-money-tech/maven/moira-kotlin-client/_latestVersion)
+
 # Yandex.Money Kotlin Moira Client
 
 Client for [Moira](https://github.com/moira-alert/moira) written in Kotlin.
@@ -12,7 +19,7 @@ Gradle example:
 
 ```groovy
 dependencies {
-    implementation 'ru.yandex.money.tools:yamoney-moira-client:1.0.0'
+    implementation 'com.yandex.money.tech:moira-kotlin-client:1.0.1'
 }
 ```
 
