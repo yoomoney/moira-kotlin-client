@@ -157,8 +157,6 @@ bintray {
         licenses = ['MIT']
         labels = ['alerting', 'moira', 'kotlin']
         publicDownloadNumbers = true
-        githubRepo = 'yandex-money-tech/moira-kotlin-client'
-        githubReleaseNotesFile = 'CHANGELOG.md'
         version {
             name = project.version
             released = new Date()
