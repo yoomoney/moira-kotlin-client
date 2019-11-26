@@ -1,7 +1,7 @@
-### NEXT_VERSION_TYPE=PATCH
-### NEXT_VERSION_DESCRIPTION_BEGIN
+## [1.0.3]() (26-11-2019)
+
 * Remove GitHub repo info from `build-public.gradle`
-### NEXT_VERSION_DESCRIPTION_END
+
 ## [1.0.2]() (26-11-2019)
 
 * Set executable permission for `gradlew-public` file
