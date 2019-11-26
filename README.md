@@ -19,7 +19,7 @@ Gradle example:
 
 ```groovy
 dependencies {
-    implementation 'com.yandex.money.tech:moira-kotlin-client:1.0.2'
+    implementation 'com.yandex.money.tech:moira-kotlin-client:1.0.3'
 }
 ```
 
