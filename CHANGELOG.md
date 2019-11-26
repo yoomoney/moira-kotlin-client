@@ -1,5 +1,6 @@
-### NEXT_VERSION_TYPE=MAJOR|MINOR|PATCH
+### NEXT_VERSION_TYPE=PATCH
 ### NEXT_VERSION_DESCRIPTION_BEGIN
+* Set executable permission for `gradlew-public` file
 ### NEXT_VERSION_DESCRIPTION_END
 ## [1.0.1]() (26-11-2019)
 
