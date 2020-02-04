@@ -16,7 +16,7 @@ repositories {
     jcenter()
 }
 
-task wrapper(type: Wrapper) {
+wrapper {
     distributionType = Wrapper.DistributionType.ALL
     jarFile = "${project.projectDir}/gradle-public/wrapper/gradle-wrapper.jar"
     scriptFile = "${project.projectDir}/gradlew-public"
