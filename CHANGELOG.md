@@ -1,7 +1,7 @@
-### NEXT_VERSION_TYPE=PATCH
-### NEXT_VERSION_DESCRIPTION_BEGIN
+## [1.1.1]() (07-02-2020)
+
 * Fix wrapper task.
-### NEXT_VERSION_DESCRIPTION_END
+
 ## [1.1.0]() (03-02-2020)
 
 * Update gradle version 4.10.2 -> 6.0.1
