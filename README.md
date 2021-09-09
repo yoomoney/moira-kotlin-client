@@ -1,11 +1,10 @@
-[![Build Status](https://travis-ci.org/yandex-money-tech/moira-kotlin-client.svg?branch=master)](https://travis-ci.org/yandex-money-tech/moira-kotlin-client)
-[![Build status](https://ci.appveyor.com/api/projects/status/vwf2hvs36150upwx?svg=true)](https://ci.appveyor.com/project/f0y/moira-kotlin-client)
-[![codecov](https://codecov.io/gh/yandex-money-tech/moira-kotlin-client/branch/master/graph/badge.svg)](https://codecov.io/gh/yandex-money-tech/moira-kotlin-client)
+[![Build Status](https://travis-ci.org/yoomoney/moira-kotlin-client.svg?branch=master)](https://travis-ci.org/yoomoney/moira-kotlin-client)
+[![codecov](https://codecov.io/gh/yoomoney/moira-kotlin-client/branch/master/graph/badge.svg)](https://codecov.io/gh/yoomoney/moira-kotlin-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Javadoc](https://img.shields.io/badge/javadoc-latest-blue.svg)](https://yandex-money-tech.github.io/moira-kotlin-client/)
-[![Download](https://api.bintray.com/packages/yandex-money-tech/maven/moira-kotlin-client/images/download.svg) ](https://bintray.com/yandex-money-tech/maven/moira-kotlin-client/_latestVersion)
+[![Javadoc](https://img.shields.io/badge/javadoc-latest-blue.svg)](https://yoomoney.github.io/moira-kotlin-client/)
+[![Download](https://img.shields.io/badge/Download-latest-green.svg) ](https://search.maven.org/artifact/ru.yoomoney.tech/moira-kotlin-client)
 
-# Yandex.Money Kotlin Moira Client
+# moira-kotlin-client
 
 Client for [Moira](https://github.com/moira-alert/moira) written in Kotlin.
 
@@ -19,7 +18,7 @@ Gradle example:
 
 ```groovy
 dependencies {
-    implementation 'com.yandex.money.tech:moira-kotlin-client:1.0.3'
+    implementation 'ru.yoomoney.tech:moira-kotlin-client:2.0.0'
 }
 ```
 
@@ -27,17 +26,18 @@ dependencies {
 
 First of all you have to initialize instance of Moira client: 
 ```kotlin
-import ru.yandex.money.moira.client.Moira
-import ru.yandex.money.moira.client.settings.MoiraSettings
+import ru.yoomoney.tech.moira.client.Moira
+import ru.yoomoney.tech.moira.client.settings.MoiraSettings
 
 val moira = Moira(
     MoiraSettings(
-        baseUrl = "http://yourmoira.com/api"
+        // Moira API URL
+        baseUrl = "http://example.net/api"
     )
 )
 ```
 
-In addition you can specify user login and credentials to authorize operations in Moira via `MoiraSettings`. For more 
+In addition, you can specify user login and credentials to authorize operations in Moira via `MoiraSettings`. For more 
 information about security in Moira see [this page](https://moira.readthedocs.io/en/latest/installation/security.html).
 
 ## User Guide
@@ -46,11 +46,11 @@ information about security in Moira see [this page](https://moira.readthedocs.io
 
 #### Create new trigger
 ```kotlin
-import ru.yandex.money.moira.client.triggers.Trigger
-import ru.yandex.money.moira.client.triggers.TriggerState.ERROR
-import ru.yandex.money.moira.client.triggers.TriggerType.RISING
-import ru.yandex.money.moira.client.triggers.expression.SimpleExpression
-import ru.yandex.money.moira.client.triggers.ttl.TtlCondition
+import ru.yoomoney.tech.moira.client.triggers.Trigger
+import ru.yoomoney.tech.moira.client.triggers.TriggerState.ERROR
+import ru.yoomoney.tech.moira.client.triggers.TriggerType.RISING
+import ru.yoomoney.tech.moira.client.triggers.expression.SimpleExpression
+import ru.yoomoney.tech.moira.client.triggers.ttl.TtlCondition
 
 val triggerId = moira.triggers.create(
     trigger = Trigger(
@@ -100,9 +100,9 @@ if (trigger != null) {
 
 ### Check whether trigger exists or not (manually)
 ```kotlin
-import ru.yandex.money.moira.client.triggers.Trigger
-import ru.yandex.money.moira.client.triggers.TriggerType.RISING
-import ru.yandex.money.moira.client.triggers.expression.SimpleExpression
+import ru.yoomoney.tech.moira.client.triggers.Trigger
+import ru.yoomoney.tech.moira.client.triggers.TriggerType.RISING
+import ru.yoomoney.tech.moira.client.triggers.expression.SimpleExpression
 
 val trigger = Trigger(
     name = "Trigger name",
@@ -126,7 +126,7 @@ if (existingTriggerWithSameName == null) {
 
 ### Create subscription
 ```kotlin
-import ru.yandex.money.moira.client.subscriptions.Subscription
+import ru.yoomoney.tech.moira.client.subscriptions.Subscription
 
 val subscriptionId = moira.subscriptions.create(subscription = Subscription(
     contacts = listOf("79ac9de2-a3b3-4f94-b3ea-74f6f4094fd2"),
@@ -151,7 +151,7 @@ moira.contacts.all().forEach { println(it.id) }
 
 ### Get contact id by type and value
 ```kotlin
-import ru.yandex.money.moira.client.contacts.Contacts
+import ru.yoomoney.tech.moira.client.contacts.Contacts
 
 fun Contacts.fetchId(type: String, value: String): String? {
     return all().find { it.type == type && it.value == value }?.id
